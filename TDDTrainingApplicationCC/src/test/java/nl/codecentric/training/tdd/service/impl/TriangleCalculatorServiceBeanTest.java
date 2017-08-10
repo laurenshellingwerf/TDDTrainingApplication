@@ -84,7 +84,7 @@ public class TriangleCalculatorServiceBeanTest {
 
     @Test(expected = IncorrectTriangleSidesException.class)
     public void testInvalidTriangleSides3(){
-        triangleCalculatorServiceBean.calculateTriangleType("9","4","5");
+        Assert.assertNotNull(triangleCalculatorServiceBean.calculateTriangleType("9","4","5"));
     }
 
     @Test
